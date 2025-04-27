@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './navbar'
 import HeadingCompo from '../common/HeadingCompo'
 import CustomButton from '../common/CustomButton'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
-import Navbar from '../components/layout/navbar'
+import Navbar from '../components/layout/Navbar'
 import Footerblock from '../components/layout/Footerblock'
 const LayoutHomePage = () => {
     return (
