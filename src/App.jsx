@@ -8,7 +8,7 @@ import Homepage from './pages/Homepage'
 import Nopage from './pages/Nopage'
 import Portfolio from './pages/Portfolio'
 import PortDetail from './pages/PortDetail'
-import PostPage from './pages/Postpage'
+import PostPage from './pages/PostPage'
 import CompoShowcase from './pages/CompoShowcase'
 
 const App = () => {
