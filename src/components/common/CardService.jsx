@@ -2,7 +2,7 @@ import React from 'react'
 import ArrowUpRightBtn from './ArrowUpRightBtn'
 import HeadingCompo from './HeadingCompo'
 
-const CardService = ({ label1, label2, images, bgColor, variant, iconColor, backgroundColor}) => {
+const CardService = ({ label1, label2, images, bgColor, variant, iconColor, textColor,bgIcon}) => {
     return (
         <div className={`flex flex-row  border-b-4 border-[1px]   w-full items-center justify-between rounded-3xl p-[30px] ${bgColor}`}>
             <div className=' space-y-10'>
@@ -10,7 +10,7 @@ const CardService = ({ label1, label2, images, bgColor, variant, iconColor, back
                     <HeadingCompo label={label1} variant={variant} className={`w-fit `} />
                     <HeadingCompo label={label2} variant={variant} className={'w-fit'} />
                 </div>
-                <ArrowUpRightBtn label='learn more' iconColor={iconColor} backgroundColor={backgroundColor} />
+                <ArrowUpRightBtn label='learn more' iconColor={iconColor} textColor={textColor} bgIcon={bgIcon} />
             </div>
             <img src={`/assets/images/${images}.svg`} alt="" className='w-1/3' />
         </div>

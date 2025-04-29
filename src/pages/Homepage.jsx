@@ -21,7 +21,7 @@ const Homepage = () => {
     "3.svg",
     "4.svg",
     "5.svg",
-    
+
   ];
   useEffect(() => {
     AOS.init({

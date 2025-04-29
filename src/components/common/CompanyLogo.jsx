@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const CompanyLogo = ({ images, from, to }) => {
 
     return (
-        <div className="flex MyGradient">
+        <div className="flex ">
             <motion.div
                 initial={{ x: `${from}` }}
                 animate={{ x: `${to}` }}
