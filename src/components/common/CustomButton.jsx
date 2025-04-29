@@ -13,7 +13,7 @@ const CustomButton = ({ label, onClick, variant = 'primary', className = '' }) =
   return (
     <button
       data-aos="fade-up"
-      className={`${baseStyle} ${variants[variant]}  ${className}`}
+      className={`${baseStyle} ${variants[variant]}  ${className} hover:scale-125 transition-all duration-500`}
       onClick={onClick}
     >
       {label}
