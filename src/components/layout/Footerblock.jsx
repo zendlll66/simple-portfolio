@@ -2,6 +2,7 @@ import React from 'react'
 import HeadingCompo from '../common/HeadingCompo'
 import CustomButton from '../common/CustomButton'
 
+
 const Footerblock = () => {
     return (
         <div className='bg-[#191A23] text-white  px-10 pt-10 pb-5 md:px-20 md:pt-20 md:pb-10 space-y-10 rounded-t-2xl'>

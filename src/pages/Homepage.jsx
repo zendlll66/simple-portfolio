@@ -13,6 +13,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 const Homepage = () => {
+
+  const upperMarquee = [
+    "0.svg",
+    "1.svg",
+    "2.svg",
+    "3.svg",
+    "4.svg",
+    "5.svg",
+    
+  ];
   useEffect(() => {
     AOS.init({
       duration: 1000,  // 1 วิ
@@ -44,7 +54,9 @@ const Homepage = () => {
       </section>
 
       {/* Company Logo */}
-      <CompanyLogo />
+      <div className='flex justify-center itme.center overflow-hidden '>
+        <CompanyLogo images={upperMarquee} from={0} to={"-100%"} />
+      </div>
 
       {/* Services Section */}
       <section className="space-y-8">

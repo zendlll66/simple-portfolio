@@ -1,15 +1,31 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
-const CompanyLogo = () => {
+const CompanyLogo = ({ images, from, to }) => {
+
     return (
-        <div data-aos="fade-up" className='grid md:grid-cols-6 md:gap-10 grid-cols-3 gap-10 justify-between items-center p-4 grayscale '>
-            {/* Logo */}
-            {Array.from({ length: 6 }).map((_, index) => (
-                <div key={index} className=''>
-                    <img src={`/assets/images/Company-logo-${index}.svg`} alt={`Company logo ${index}`} />
-                </div>
-            ))}
+        <div className="flex MyGradient">
+            <motion.div
+                initial={{ x: `${from}` }}
+                animate={{ x: `${to}` }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                className="flex flex-shrink-0"
+            >
+                {images.map((image, index) => {
+                    return <img className="h-40 w-56 pr-20 grayscale" src={`/assets/images/Company-logo-${image}`} key={index} />;
+                })}
+            </motion.div>
 
+            <motion.div
+                initial={{ x: `${from}` }}
+                animate={{ x: `${to}` }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                className="flex flex-shrink-0"
+            >
+                {images.map((image, index) => {
+                    return <img className="h-40 w-56 pr-20 grayscale" src={`/assets/images/Company-logo-${image}`} key={index} />;
+                })}
+            </motion.div>
         </div>
     )
 }

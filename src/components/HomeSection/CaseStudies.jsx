@@ -3,7 +3,7 @@ import React from 'react'
 const CaseStudies = () => {
   return (
     <div className='w-full h-fit overflow-x-auto'>
-      <div className='flex flex-nowrap md:space-x-10 items-stretch lg:p-10  p-5 aria-hidden:bg-[#191A23] md:bg-[#191A23] text-white rounded-2xl gap-5'>
+      <div className='flex flex-nowrap md:space-x-0 items-stretch lg:p-10  p-5 aria-hidden:bg-[#191A23] md:bg-[#191A23] text-white rounded-2xl gap-5'>
         
         <div className='flex flex-col space-y-5 bg-[#191A23] lg:p-5 md:p-0 p-10 min-w-[300px] md:min-w-0 rounded-2xl'>
           <p data-aos="fade-up" className="flex-1">
